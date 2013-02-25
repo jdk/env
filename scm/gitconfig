@@ -1,6 +1,6 @@
 [user]
-	name = Robert Curtis
-	email = robert.caston@gmail.com
+	name = Jason Kotzin
+	email = jasonkotzin@gmail.com
 [push]
 	default = matching
 [merge]
@@ -10,3 +10,23 @@
 [alias]
 	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
 	ver = describe --tags --dirty=+ --always
+	root = !pwd
+	tree = log --graph --full-history --all --color --date=short '--pretty=format:%x1b[31m%h%x09%x1b[0m%x20%ad%x1b[35m%d%x1b[0m %s %x1b[33m(%an)%x1b[0m'
+	tr = log --graph --full-history --all --color --date=short '--pretty=format:%x20%x1b[35m%d%x1b[0m %s %x1b[33m(%an)%x1b[0m'
+[branch "master"]
+	rebase = true
+[branch]
+	autosetuprebase = always
+[difftool "Kaleidoscope"]
+	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
+[mergetool "Kaleidoscope"]
+	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
+	trustExitCode = true
+[diff]
+	tool = Kaleidoscope
+[difftool]
+	prompt = false
+[mergetool]
+	prompt = false
+[merge]
+	tool = Kaleidoscope

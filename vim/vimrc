@@ -7,7 +7,8 @@
 set nocompatible
 
 " default settings
-colorscheme darkblue
+colorscheme solarized
+set background=dark
 
 " tabs
 set tabstop=4
@@ -42,6 +43,7 @@ set equalprg=fmt
 
 " make gf open file in new tab
 map gf :tabnew <cfile><CR>
+noremap <silent> <F5> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>
 
 " Functions
 function! ReadScriptFiles(wildcard)

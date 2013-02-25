@@ -4,3 +4,4 @@
 LINK		.vimrc					../vim/vimrc
 LINK		.gvimrc					../vim/gvimrc
 LINK		.vim/colors/wombat.vim	../vim/colors/wombat.vim
+LINK		.vim/colors/solarized.vim	../vim/colors/solarized.vim

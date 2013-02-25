@@ -4,8 +4,8 @@ function Filetype_c()
 	set tabstop=8
 	set shiftwidth=8
 	set noexpandtab
-	set foldnestmax=1
-	set foldmethod=syntax
+"	set foldnestmax=1
+"	set foldmethod=syntax
 	set equalprg=indent\ -st
 	call ConfigCScope()
 	call ReadScriptFiles("~/.vim/scripts/c/*.vim")

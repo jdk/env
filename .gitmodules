@@ -4,6 +4,9 @@
 [submodule "difftools"]
 	path = difftools
 	url = git://github.com/rcc/difftools.git
+[submodule "ssh"]
+	path = ssh
+	url = https://github.com/flirc/docker-ssh-keys.git
 [submodule "vim/bundle/Vundle.vim"]
 	path = vim/bundle/Vundle.vim
 	url = https://github.com/VundleVim/Vundle.vim.git

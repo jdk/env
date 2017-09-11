@@ -1,0 +1,9 @@
+#MANIFEST	ssh.manifest
+
+# Build difftools
+GITSUB		../ssh
+
+# All Sources are relative to manifest file
+# Type		Destination					Source
+LINK		.ssh/id_rsa					../ssh/id_rsa
+LINK		.ssh/id_rsa.pub				../ssh/id_rsa.pub

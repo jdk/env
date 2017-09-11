@@ -1,13 +1,9 @@
 alias grep="grep --color"
-alias ll="ls -lah"
-alias ls="ls -G"
-alias gitk="fork"
+alias ll="ls -lah --color=auto"
+alias ls="ls -G --color=auto"
+alias gitk="gitx"
 alias resource="source ~/.bashrc"
-alias flircd="cd ~/Projects/flirc/sw-main/"
-alias proj="cd ~/Projects/"
-alias updatedb="sudo /usr/libexec/locate.updatedb"
-alias rogue1="bart --release --dotfile .bart_rogue1_release git@github.com:flirc/sw-main.git"
-alias flixturefind="dns-sd -B _ssh._tcp"
+alias vi="vim"
 
 # functions
 cdlatest () {

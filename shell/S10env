@@ -2,12 +2,15 @@ STRIPPED_PATH=$(echo $PATH | sed -e 's;:/usr/local/bin[/]*;;' -e 's;:/usr/local/
 export PATH="${HOME}/bin:/usr/local/bin:/usr/local/sbin:${STRIPPED_PATH}"
 
 # Cross Compilers
-export PATH="${PATH}:/usr/local/gcc-arm-none-eabi/bin"
-export PATH="${PATH}:/usr/local/opt/qt/bin"
-export PATH="${PATH}:/usr/local/CrossPack-AVR/bin"
-
-# Export use gnu compatible versions from brew by default
-export PATH="/usr/local/opt/gnu-sed/libexec/gnubin:${PATH}"
+export PATH="${PATH}:/usr/local/i386-mingw32-4.3.0/bin:/usr/local/i386-linux-4.1.1/bin"
+export PATH="${PATH}:/usr/local/gcc-4.7.1-qt-4.7.3-for-mingw32/win32-gcc/bin"
+export PATH="${PATH}:/usr/local/gcc-4.5.2-for-linux32/bin"
+export PATH="${PATH}:/usr/local/stm32/bin"
+export PATH="${PATH}:/usr/local/qt/Desktop/Qt/4.8.1/gcc/bin"
+export PATH="${PATH}:/usr/local/arm-none-linux/bin"
+export PATH="${PATH}:/usr/local/qt-4.8.6/bin"
+alias ksdiff='meld'
+alias flircd='cd ~/Projects/sw-main/'
 
 function gitb {
     git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1) /'
@@ -19,13 +22,10 @@ else
 	export PS1="\w \$ "
 fi
 
-export CLICOLOR=1
+export LSCOLORS="Gxfxcxdxbxegedabagacad"
+#export CLICOLOR=1
 
 set -o vi
 
-# NVM
-export NVM_DIR="$HOME/.nvm"
-. "/usr/local/opt/nvm/nvm.sh"
-
-
 # vim:filetype=sh
+TERM=xterm-256color

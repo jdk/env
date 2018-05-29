@@ -3,6 +3,8 @@ alias ll="ls -lah"
 alias ls="ls -G"
 alias gitk="gitx"
 alias resource="source ~/.bashrc"
+alias flircd="cd ~/Projects/flirc/sw-main/"
+alias proj="cd ~/Projects/"
 
 # functions
 newbash () {

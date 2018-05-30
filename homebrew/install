@@ -1,11 +1,71 @@
 #!/bin/bash
 
+# exit on error
 set -e
 
-ruby -e "$(curl -fsSkL raw.github.com/mxcl/homebrew/go)"
+# Install brew
+#/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
-brew doctor
+# Install command-line tools using Homebrew.
 
-brew install git
+# Make sure we’re using the latest Homebrew.
+brew update
+
+# Upgrade any already-installed formulae.
+brew upgrade
+
+# Install GNU core utilities (those that come with macOS are outdated).
+# Don’t forget to add `$(brew --prefix coreutils)/libexec/gnubin` to `$PATH`.
+brew install coreutils
+
+# Install GNU `find`, `locate`, `updatedb`, and `xargs`, `g`-prefixed.
+brew install findutils
+# Install GNU `sed`, overwriting the built-in `sed`.
+brew install gnu-sed --with-default-names
+
+
+# Install more recent versions of some macOS tools.
+brew install vim --with-override-system-vi
+brew install git nvm homebrew/cask/transmission-remote-gui 
+brew install grep
+brew install openssh
+brew install screen
+
+# Install other useful binaries.
 brew install ack
+brew install gawk
+brew install git
+brew install git-lfs
+brew install imagemagick --with-webp
+brew install p7zip
+brew install tree
+brew install dos2unix
+
+# Install devtools
+brew install qt
+brew install libusb
+brew install doxygen
+brew install caskroom/cask/crosspack-avr
+brew install markdown
+brew install automake
+brew install libtool
+brew install cgdb
+brew install ddd
+brew install homebrew/cask/xquartz
+
+# Linode
+brew tap linode/cli
+brew install linode-cli
+
+# Install macvim GUI
 brew install --with-cscope macvim
+
+# Node
+brew install nvm
+nvm install 9
+
+# Misc
+brew cask install iina
+
+# Remove outdated versions from the cellar.
+brew cleanup

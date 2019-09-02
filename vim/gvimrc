@@ -1,6 +1,6 @@
 set lines=50
 set columns=161
-colorscheme wombat
+colorscheme hybrid
 
 " no toolbar
 set guioptions-=T

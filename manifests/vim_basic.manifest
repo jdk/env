@@ -1,6 +1,9 @@
 # All Sources are relative to manifest file
 # Type		Destination				Source
 
+# Git Submodule
+GITSUB      ../vim/bundle/Vundle.vim
+
 LINK		.vimrc					../vim/vimrc
 LINK		.gvimrc					../vim/gvimrc
 LINK		.vim/colors/wombat.vim	../vim/colors/wombat.vim

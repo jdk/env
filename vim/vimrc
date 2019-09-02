@@ -83,3 +83,6 @@ call ReadScriptFiles("~/.vim/scripts/*.vim")
 call ReadEnv()
 " configure path from env
 call ConfigFindPath()
+
+" Toggle Nerd Tree
+map <silent> <C-n> :NERDTreeToggle<CR>

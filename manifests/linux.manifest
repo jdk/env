@@ -1,0 +1,9 @@
+# All Sources are relative to manifest file
+#
+# Type		Destination					Source
+LINK		.config/base16-shell/base16-material.dark.sh	../linux/base16-material.dark.sh
+
+LINK		.dircolors				../linux/dircolors
+LINK		.Xresources				../linux/Xresources
+LINK		.shell/S10term			../shell/S10term
+

@@ -13,7 +13,3 @@ LINK		.shell/S30osxutil		../shell/S30osxutil
 LINK		bin/colors				../bin/colors
 LINK		bin/syncdir				../bin/syncdir
 LINK		bin/boxes				../bin/boxes
-
-# Linux
-LINK		.dircolors				../linux/dircolors
-LINK		.Xresources				../linux/Xresources

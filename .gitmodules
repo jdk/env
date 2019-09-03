@@ -7,6 +7,6 @@
 [submodule "ssh"]
 	path = ssh
 	url = https://github.com/flirc/docker-ssh-keys.git
-[submodule "vim/bundle/Vundle.vim"]
-	path = vim/bundle/Vundle.vim
-	url = https://github.com/VundleVim/Vundle.vim.git
+[submodule "Vundle.vim"]
+	path = Vundle.vim
+	url = git://github.com/VundleVim/Vundle.vim.git

@@ -9,6 +9,12 @@ export PATH="${PATH}:/usr/local/stm32/bin"
 export PATH="${PATH}:/usr/local/qt/Desktop/Qt/4.8.1/gcc/bin"
 export PATH="${PATH}:/usr/local/arm-none-linux/bin"
 export PATH="${PATH}:/usr/local/qt-4.8.6/bin"
+export PATH="${PATH}:/usr/local/gopath/bin:/usr/local/go/bin:/root/gocode/bin"
+export PATH="${PATH}:/opt/mssql-tools/bin"
+
+export GOROOT="/usr/local/go"
+export GOPATH="/usr/local/gopath"
+
 alias ksdiff='meld'
 alias flircd='cd ~/Projects/sw-main/'
 

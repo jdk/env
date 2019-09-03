@@ -9,7 +9,7 @@ set guioptions-=T
 set guicursor+=a:blinkon0
 
 " font
-set guifont=Source\ Code\ Pro\ Light:h14
+set guifont=Source\ Code\ Pro\ Light:h12
 
 " remove some default menus
 aunmenu Tools

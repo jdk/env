@@ -23,9 +23,10 @@ else
 fi
 
 export LSCOLORS="Gxfxcxdxbxegedabagacad"
-#export CLICOLOR=1
 
 set -o vi
 
-# vim:filetype=sh
+eval "$(dircolors ~/.dircolors)"
 TERM=xterm-256color
+
+# vim:filetype=sh

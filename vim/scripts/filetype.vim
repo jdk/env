@@ -79,6 +79,7 @@ if has("autocmd")
 	autocmd FileType c			call Filetype_c()
 	autocmd FileType cpp		call Filetype_c()
 	autocmd FileType objc		call Filetype_c()
+	autocmd FileType arduino	call Filetype_c()
 
 	" Tab Separated Values
 	autocmd BufRead *.tsv		set filetype=tsv

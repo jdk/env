@@ -18,6 +18,9 @@ export GOPATH="/usr/local/gopath"
 alias ksdiff='meld'
 alias flircd='cd ~/Projects/sw-main/'
 
+alias asdf="sudo loadkeys dvorak"
+alias aoeu="sudo loadkeys us"
+
 function gitb {
     git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1) /'
 }

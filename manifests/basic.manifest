@@ -16,3 +16,4 @@ LINK		bin/boxes				../bin/boxes
 
 # Linux
 LINK		.dircolors				../linux/dircolors
+LINK		.Xresources				../linux/Xresources

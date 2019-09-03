@@ -66,4 +66,4 @@ cleandir () {
     find . -name tags -delete
 }
 
-#vi: set filetype=sh
+# vim:filetype=sh

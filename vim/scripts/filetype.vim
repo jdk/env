@@ -54,7 +54,9 @@ function Filetype_python()
 	set autoindent
 	set tabstop=4
 	set shiftwidth=4
-	set noexpandtab
+	set expandtab
+	" highlight 81st character in line
+	call matchadd('ErrorMsg', '\%81v.', -1)
 	call ReadEnv() " configure any overrides
 endfunction
 

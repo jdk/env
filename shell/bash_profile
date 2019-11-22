@@ -1,2 +1,3 @@
+export BASH_SILENCE_DEPRECATION_WARNING=1
 export INTERACTIVE_LOGIN=1
 [ -e ~/.bashrc ] && source ~/.bashrc

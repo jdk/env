@@ -64,6 +64,7 @@ cleandir () {
     find . -name *.swp -delete
     find . -name cscope.out -delete
     find . -name tags -delete
+    find . -name cscope.files -delete
 }
 
 # vim:filetype=sh

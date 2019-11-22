@@ -63,6 +63,7 @@ set equalprg=fmt
 " make gf open file in new tab
 map gf :tabnew <cfile><CR>
 noremap <silent> <F5> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>
+noremap <F6> :GundoToggle<CR>
 
 " Functions
 function! ReadScriptFiles(wildcard)
@@ -110,3 +111,4 @@ set nocompatible
 filetype plugin on
 set modeline
 set modelines=5
+execute pathogen#infect()

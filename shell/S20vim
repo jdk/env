@@ -4,6 +4,9 @@ else
 	export GVIM=gvim
 fi
 
+alias vim='mvim -v'
+alias vi='mvim -v'
+
 export EDITOR=vim
 export GEDITOR=$GVIM
 
